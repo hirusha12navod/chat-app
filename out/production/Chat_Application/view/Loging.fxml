@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogingFormController">
+   <children>
+      <AnchorPane prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: #1abc9c;">
+         <children>
+            <Label layoutX="168.0" layoutY="6.0" prefHeight="50.0" prefWidth="275.0" text="Chatting Room" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="169.0" fitWidth="180.0" layoutX="216.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/person.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="Txt_Enter_Name" layoutX="173.0" layoutY="316.0" onAction="#Txt_name_on_action" prefHeight="25.0" prefWidth="275.0" promptText="Enter Name" style="-fx-background-color: #bdc3c7;" />
+   </children>
+</AnchorPane>
